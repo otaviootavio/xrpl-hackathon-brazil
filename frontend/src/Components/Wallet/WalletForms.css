@@ -1,0 +1,9 @@
+.WalletButton {
+
+    width: 30px;
+}
+.button {
+    background-color: blue;
+    border: 0;
+    border-radius: 4px;
+}
