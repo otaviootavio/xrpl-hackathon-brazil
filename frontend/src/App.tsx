@@ -1,10 +1,13 @@
+import WalletForms from "./Components/Wallet/WalletForms";
+
+
 function App() {
 
   return (
     <>
-      Teste
+      <WalletForms></WalletForms>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
