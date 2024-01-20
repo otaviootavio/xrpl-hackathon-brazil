@@ -1,6 +1,5 @@
 .noticias {
-    display:flex;
-    flex-direction: row;
     column-count: 3;
-    column-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }

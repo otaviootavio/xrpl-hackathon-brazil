@@ -1,16 +1,13 @@
-.coluna {
-    display: flex;
-    flex-direction: column;
-}
-
 .boxNews {
-    width: 140px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 10px 10px 10px black;
-    
+    box-shadow: 2px 2px 5px black;
+    padding: 25px;
+    margin-bottom: 10px;
 }
 
 .imagem {
-    width: 100px;
+    width: 400px;
+    border-radius: 5px;
+    justify-content: center;
 }
