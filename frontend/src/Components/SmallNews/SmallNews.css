@@ -1,0 +1,16 @@
+.coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxNews {
+    width: 140px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+    
+}
+
+.imagem {
+    width: 100px;
+}

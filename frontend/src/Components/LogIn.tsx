@@ -8,8 +8,8 @@ const LogIn = () => {
         <br></br>
         <form className="center">
           <div>
-            <label className="form-label text-dark">Email:</label>
-            <input type="email" className="form-control" name="email" placeholder="Your email" required></input>
+            <label className="form-label text-dark">Username:</label>
+            <input type="name" className="form-control" name="name" placeholder="Your username" required></input>
           </div>
           <br></br>
           <div>
@@ -29,8 +29,8 @@ const LogIn = () => {
         <br></br>
         <form>
           <div>
-            <label className="form-label text-dark">Email:</label>
-            <input type="email" className="form-control" name="email" placeholder="Your email" required></input>
+            <label className="form-label text-dark">Username:</label>
+            <input type="name" className="form-control" name="name" placeholder="Your username" required></input>
           </div>
           <br></br>
           <div>
