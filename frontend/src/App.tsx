@@ -1,3 +1,6 @@
+import WalletForms from "./Components/Wallet/WalletForms";
+
+
 import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home';
 import News from './Components/News';
