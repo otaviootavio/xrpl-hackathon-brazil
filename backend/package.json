@@ -20,7 +20,8 @@
     "express": "^4.18.2",
     "express-session": "^1.17.3",
     "passport": "^0.7.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "xrpl": "^2.14.0"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
