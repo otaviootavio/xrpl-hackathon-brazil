@@ -19,6 +19,10 @@ const Home = () => {
         <div className="container text-center py-5">
           <div className="container mt-4">
             <h1 className="animated-element animated-text">HOW IT ALL WORKS?</h1>
+            <h2 className="animated-element animated-text">MicroRipplePay proposes a revolutionary approach 
+              by introducing micropayments. Imagine only paying for what you consume, whether it's reading a single article, watching a short 
+              video, or spending a few minutes on a streaming platform. Instead of hefty monthly subscriptions, users can now make micropayments
+               for the exact amount of content they engage with.</h2>
             <br></br>
             <div className="coluna">
               <div className="coluna">
@@ -26,7 +30,6 @@ const Home = () => {
                   <p className="animated-element animated-text"></p>
                 </div>
               </div>
-              <img src="" alt="Explanation" className="imagem"></img>
               <br></br>
               <a href="/News" className="animated-element botao1">Go to the news</a>
             </div>

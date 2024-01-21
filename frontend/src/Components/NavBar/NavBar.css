@@ -23,3 +23,8 @@
     display: flex;
     flex-direction: column;
 }
+.navbar-brand {
+    color: #8B4513; /* Cor marrom */
+    font-family: "Garamond", sans-serif; /* Fonte desejada */
+    font-size: 48px; /* Tamanho da fonte em pixels; ajuste conforme necessário */
+}

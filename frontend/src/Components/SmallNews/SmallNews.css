@@ -4,13 +4,15 @@
 }
 
 .boxNews {
-    width: 140px;
+    display: flex;
     background-color: white;
     border-radius: 5px;
     box-shadow: 10px 10px 10px black;
-    
 }
 
 .imagem {
-    width: 100px;
+    width: 400px;
+    margin-right: 20px; /* Ajuste a margem conforme necessário */
 }
+
+/* Outros estilos que você deseja adicionar específicos para SmallNews */
