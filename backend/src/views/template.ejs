@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <header>
+    <%- include('partials/_navbar', { user: user }) %>
+  </header>
+
+  <main>
+    <%- include(page) %>
+  </main>
+
+  <footer>
+    <p> made with <3 by <a href="https://polichain.xyz">polichain.xyz</a>. No rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

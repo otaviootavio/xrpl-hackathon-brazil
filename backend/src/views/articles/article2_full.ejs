@@ -1,0 +1,42 @@
+<h2>Title of Article 2</h2>
+<p>Content of article 2...</p>
+<!-- Add more content as needed -->
+
+<script>
+  function chargeUser() {
+    fetch('/payment/charge', {
+        method: 'POST',
+        credentials: 'include'
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.hasCharged === false) {
+          alert(data.msg);
+          window.location.href = '/';
+        }
+        console.log('Charge applied:', data);
+      })
+      .catch(error => console.error('Charge error:', error));
+  }
+
+  function updateUserBalance() {
+    fetch('/user', {
+        method: 'GET',
+        credentials: 'include'
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.username && data.balance) {
+          document.getElementById('userBalance').innerText = formatBalance(data.balance) + ' XRP';
+        }
+      })
+      .catch(error => console.error('Update balance error:', error));
+  }
+
+  function formatBalance(balance) {
+    return (Number(balance) / 1000000).toFixed(2);
+  }
+
+  setInterval(chargeUser, 2000);
+  setInterval(updateUserBalance, 2000);
+</script>

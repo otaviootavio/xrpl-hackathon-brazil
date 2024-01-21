@@ -8,5 +8,5 @@ export function isAuthenticated(req: Request, res: Response, next: NextFunction)
             return next();
         }
     }
-    res.status(401).send('User is not authenticated');
+    return res.status(403).render('error', { message: 'Authentication required' });
 }
