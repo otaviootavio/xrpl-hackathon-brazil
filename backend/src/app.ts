@@ -4,7 +4,8 @@ import passport from 'passport';
 import './passportConfig';
 import authRoutes from './routes/authRoutes';
 import cors from 'cors';
-import { isAuthenticated } from './middleware/isAuthenticated';
+import paymentRoutes from './routes/paymentRoutes';
+import userRoutes from './routes/userRoutes';
 
 const app: Express = express();
 
@@ -25,5 +26,7 @@ app.use(cors({
 }));
 
 app.use('/auth', authRoutes);
+app.use('/payment', paymentRoutes)
+app.use('/user', userRoutes)
 
 export default app;
