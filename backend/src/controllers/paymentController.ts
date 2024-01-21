@@ -6,10 +6,9 @@ export const paymentByTxController = async (req: Request, res: Response) => {
     try {
         const { tx } = req.body
         const user = req.user as User;
-        const responseData = await addBalanceToUserByTx(user, tx);
-        const balance = user.balance.toString()
+        const { balance } = await addBalanceToUserByTx(user, tx);
         const name = user.username
-        res.status(200).send({ balance, name })
+        res.status(200).send({ balance: balance.toString(), name })
     } catch (error) {
         console.error(error);
         const errorMsg = error as Error

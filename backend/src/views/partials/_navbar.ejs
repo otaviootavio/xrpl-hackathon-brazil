@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <% if (user) { %>
+    <% function formatBalance(balance) { let numBalance = Number(balance); return numBalance / 1000000; }%>
+    <li>Welcome, <%= user.username %> Balance: <span id="userBalance"><%= formatBalance(user.balance) %> XRP</span> </li>
+    <li><a href=" /">Home</a></li>
+    <li><a href="/auth/logout">Logout</a></li>
+    <li><a href="/payment">Payment</a></li>
+    <% } else { %>
+    <li><a href="/">Home</a></li>
+    <li><a href="/register">Register</a></li>
+    <li><a href="/login">Login</a></li>
+    <% } %>
+  </ul>
+</nav>

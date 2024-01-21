@@ -1,0 +1,7 @@
+  <h1>Welcome to the Homepage</h1>
+  <h1>Journal</h1>
+  <% if (user) { %>
+  <%- include('partials/_articleList', { articles: ['article1', 'article2', 'article3'] }) %>
+  <% } else { %>
+  <p>Login to see the posts!</p>
+  <% }  %>

@@ -1,29 +1,24 @@
+# Use node:18.16.0-alpine as the base image
 FROM node:18.16.0-alpine as base
 
-# Add package file
+# Copy package.json and package-lock.json
 COPY package.json ./
 COPY package-lock.json ./
+COPY .env ./
 
-# Install deps
+# Install dependencies
 RUN npm install
 
-# Copy source
+# Copy the necessary files
 COPY prisma ./prisma
 COPY src ./src
 COPY tsconfig.json ./tsconfig.json
 
-# Build dist
+# Generate the Prisma client
 RUN npx prisma generate
-RUN npm run build
-
-# Start production image build
-FROM node:18.16.0-alpine
-
-# Copy node modules and build directory
-COPY --from=base ./node_modules ./node_modules
-COPY --from=base /dist /dist
 
 # Expose port 3000
 EXPOSE 3000
-CMD ["npx", "prisma", "generate"]
-CMD ["dist/index.js"]
+
+# Define the command to run your app
+CMD ["npm", "run", "dev"]
