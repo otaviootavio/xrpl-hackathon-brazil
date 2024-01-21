@@ -51,3 +51,12 @@
     box-shadow: 5px 5px 30px black;
     padding: 20px;
 }
+
+.tudo {
+    background-image: url('../../public/Home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1600px;
+    margin: 0;
+}

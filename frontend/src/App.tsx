@@ -3,6 +3,7 @@ import Home from './Components/Home';
 import News from './Components/News';
 import LogIn from './Components/LogIn';
 import CreateAnAccount from './Components/CreateAnAccount';
+import Example from './Components/Example';
 
 const App = () => {
   let component
@@ -18,6 +19,9 @@ const App = () => {
       break;
     case "/CreateAnAccount":
       component = <CreateAnAccount></CreateAnAccount>
+      break;
+    case "/Example":
+      component = <Example></Example>
       break;
   }
 

@@ -2,7 +2,7 @@ import "./LogIn.css"
 
 const LogIn = () => {
   return (
-    <div>
+    <div className="tudo">
       <div className="box">
         <h1>Login</h1>
         <br></br>

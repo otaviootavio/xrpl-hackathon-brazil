@@ -17,9 +17,12 @@
 .linha {
     display: flex;
     flex-direction: row;
+    gap: 30px;
 }
 
-.coluna {
+.coluna-big {
+    width: 700px;
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
 }
