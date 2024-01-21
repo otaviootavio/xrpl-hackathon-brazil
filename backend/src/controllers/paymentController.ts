@@ -12,7 +12,8 @@ export const paymentByTxController = async (req: Request, res: Response) => {
         res.status(200).send({ balance, name })
     } catch (error) {
         console.error(error);
-        res.status(500).send('An error occurred during registration');
+        const errorMsg = error as Error
+        res.status(500).send({ msg: 'An error occurred during registration', error: errorMsg.message });
     }
 }
 

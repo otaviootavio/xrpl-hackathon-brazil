@@ -6,6 +6,7 @@ import authRoutes from './routes/authRoutes';
 import cors from 'cors';
 import paymentRoutes from './routes/paymentRoutes';
 import userRoutes from './routes/userRoutes';
+import { isAuthenticated } from './middleware/isAuthenticated';
 
 const app: Express = express();
 
@@ -26,7 +27,7 @@ app.use(cors({
 }));
 
 app.use('/auth', authRoutes);
-app.use('/payment', paymentRoutes)
-app.use('/user', userRoutes)
+app.use('/payment', isAuthenticated, paymentRoutes)
+app.use('/user', isAuthenticated, userRoutes)
 
 export default app;
