@@ -13,7 +13,7 @@ const BigNews = (props: Props) => {
                     <h4>{props.descricao}</h4>
                     <br></br>
                     <br></br>
-                    <a href={props.href}>Know more about it</a>
+                    <a href={props.href} className="Link">Know more about it</a>
                 </div>
             </div>
         </div>
